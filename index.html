@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>facebook main page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_left">
+        <i class="fab fa-facebook"></i>
+        <div class="header_input">
+          <input type="text" placeholder="Search Facebook" />
+          <span><i class="fas fa-search"></i></span>
+        </div>
+      </div>
+      <div class="header-middle">
+        <div class="header_option">
+          <span><i class="fas fa-home" onclick="homeclick()"></i></span>
+        </div>
+
+        <div class="header_option">
+          <span><i class="fas fa-tv" onclick="watch()"></i></span>
+        </div>
+
+        <div class="header_option">
+          <span><i class="fas fa-store" onclick="store()"></i></span>
+        </div>
+
+        <div class="header_option">
+          <span><i class="fas fa-users" onclick="group()"></i></span>
+        </div>
+
+        <div class="header_option">
+          <span><i class="fas fa-dice-d6" onclick="gametoggle()"></i></span>
+        </div>
+      </div>
+      <div class="header_right">
+        <div class="header_info" onclick="profilelinktoggle()">
+          <img src="D:\image/IMG_20190805_140312_859.jpg" />
+          <h4>Raja</h4>
+        </div>
+
+        <span class="handle"
+          ><i class="fas fa-bars" onclick="barclickToggle()"></i
+        ></span>
+
+        <!-----header menu strat-->
+
+        <div class="hr-menu d-none">
+          <div class="hr-leftbar">
+            <h3>Menu</h3>
+            <div class="hr-input">
+              <span><i class="fas fa-search"></i></span>
+              <input type="text" name="search" placeholder="Search Menu" />
+            </div>
+            <p>Social</p>
+            <div class="hr-menu-profile">
+              <i class="fas fa-pizza-slice" id="social"></i>
+              <div>
+                <p>Campus</p>
+                <h4>
+                  A unique,exclusive space for college students onfacebook
+                </h4>
+              </div>
+            </div>
+
+            <div class="hr-menu-profile">
+              <i class="fas fa-calendar-plus" id="social"></i>
+              <div>
+                <p>Event</p>
+                <h4>
+                  Organise or find events and other things to do online and
+                  nearby.
+                </h4>
+              </div>
+            </div>
+
+            <div class="hr-menu-profile">
+              <i class="fas fa-user-friends" id="social"></i>
+              <div>
+                <p>Friends</p>
+                <h4>Search for friends or people you may know.</h4>
+              </div>
+            </div>
+
+            <div class="hr-menu-profile">
+              <i class="fas fa-users" id="social"></i>
+              <div>
+                <p>Groups</p>
+                <h4>Connect with people who share your interstes.</h4>
+              </div>
+            </div>
+
+            <div class="hr-menu-profile">
+              <i class="fas fa-calendar-week" id="social"></i>
+              <div>
+                <p>News feed</p>
+                <h4>See relevant posts from people and pages you follow.</h4>
+              </div>
+            </div>
+
+            <div class="hr-menu-profile">
+              <i class="far fa-flag" id="social"></i>
+              <div>
+                <p>Pages</p>
+                <h4>Discover and connect with business on facebook.</h4>
+              </div>
+            </div>
+
+            <hr />
+            <div class="et-profile-main">
+              <h4>Entertainment</h4>
+              <div class="Et-profile">
+                <i class="fas fa-dice" id="social"></i>
+                <div>
+                  <h4>Gaming Video</h4>
+                  <p>watch and connected your favourite games and streamrs.</p>
+                </div>
+              </div>
+
+              <div class="Et-profile">
+                <i class="fas fa-gamepad" id="social"></i>
+                <div>
+                  <h4>Play Games</h4>
+                  <p>Play your favourtite games.</p>
+                </div>
+              </div>
+
+              <div class="Et-profile">
+                <i class="fas fa-tv" id="social"></i>
+                <div>
+                  <h4>Watch</h4>
+                  <p>
+                    A video destination personaliz to your intersts and
+                    connections.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="et-shoping">
+              <h3>Shoping</h3>
+              <i class="fas fa-store" id="social"></i>
+
+              <div>
+                <h4>Marketplace</h4>
+                <p>Buy and sell in your community.</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="hr-right-bar">
+            <h3>Create</h3>
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="fas fa-edit"></i>
+              </div>
+              <div class="post">Post</div>
+            </div>
+
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <div class="post">Story</div>
+            </div>
+
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="fas fa-video"></i>
+              </div>
+              <div class="post">Room</div>
+            </div>
+            <br />
+            <br />
+            <hr />
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="far fa-flag"></i>
+              </div>
+              <div class="post">Page</div>
+            </div>
+
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="fas fa-ad"></i>
+              </div>
+              <div class="post">Add</div>
+            </div>
+
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="post">Group</div>
+            </div>
+
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="fas fa-calendar-plus"></i>
+              </div>
+              <div class="post">Event</div>
+            </div>
+
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="fas fa-store"></i>
+              </div>
+              <div class="post">Market place listening</div>
+            </div>
+
+            <div class="hr-profile">
+              <div class="jugnu">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="post">job</div>
+            </div>
+          </div>
+        </div>
+
+        <span class="handle"
+          ><i class="fab fa-facebook-messenger" onclick="messageToggle()"></i
+        ></span>
+
+        <!-----search input------>
+
+        <div class="main-2">
+          <h2>Messenger</h2>
+          <div class="message-list">
+            <ul>
+              <li><i class="fas fa-ellipsis-h"></i></li>
+              <li><i class="fas fa-arrows-alt"></i></li>
+              <li><i class="fas fa-video"></i></li>
+              <li><i class="fas fa-edit"></i></li>
+            </ul>
+          </div>
+
+          <div class="raam">
+            <span><i class="fas fa-search"></i></span>
+            <input
+              type="text"
+              name=""
+              id="myinput"
+              placeholder="Search Messenger"
+              onkeyup="searchFun()"
+            />
+          </div>
+          <div class="message_profile">
+            <i class="fas fa-comments"></i>
+            <div>
+              <p>New message request</p>
+              <a href="#">From biswa naik 13more</a>
+              <i class="fas fa-angle-right" id="angle-right"></i>
+            </div>
+          </div>
+
+          <div class="message_profile">
+            <img src="D:\image/unnamed.jpg" />
+            <div>
+              <p>New message request</p>
+              <a href="#">what are you doing now</a>
+              <i class="fas fa-angle-right" id="angle-right1"></i>
+            </div>
+          </div>
+
+          <div class="message_profile">
+            <img src="D:\image/IMG_20190805_140312_859.jpg" />
+            <div>
+              <p>New message request</p>
+              <a href="#">Hello</a>
+              <i class="fas fa-angle-right" id="angle-right2"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-----search inputend---->
+
+        <span class="handle"
+          ><i class="fas fa-bell" onclick="notificationToggle()"></i
+        ></span>
+        <!--notofication menu--->
+        <div class="notification-menu">
+          <h2>Notifications</h2>
+
+          <div class="notification-inner">
+            New
+            <a class="see" href="#">Seeall</a>
+            <div class="notification-profile">
+              <img
+                src="D:\image/elina-samantray-1052586-05-09-2019-01-35-24.jpg"
+              />
+              <div>
+                <p>
+                  <b>Elina samantray </b>added a story withmusic you can listen
+                  to.
+                </p>
+                <a href="#">7 minutes ago</a>
+              </div>
+            </div>
+
+            <div class="notification-profile">
+              <img src="D:\image/download (6).jpg" />
+              <div>
+                <p>
+                  <b>Dipak Samantaray </b>have new stories up .What's your
+                  reaction?
+                </p>
+                <a href="#">30 minutes ago</a>
+              </div>
+            </div>
+
+            <div class="notification-profile">
+              <img src="D:\image/download (4).jpg" />
+              <div>
+                <p><b>Pankaj puhan </b>added 4 photos in mo pain tu group.</p>
+                <a href="#">about an hour ago</a>
+              </div>
+            </div>
+            <div class="notification-links">
+              <img id="not-img" src="D:\image/raja3.jpg" />
+              <div>
+                <p>hari sent you a frien request</p>
+                <p>7 hours ago</p>
+                <p>12 mutual friends</p>
+                <button class="btncf">confirm</button>
+                <button>Delete</button>
+              </div>
+            </div>
+
+            <div class="notification-links">
+              <img id="not-img" src="D:\image/download (6).jpg" />
+              <div>
+                <p>Dev asish sent you a frien request</p>
+                <p>9 hours ago</p>
+                <p>10 mutual friends</p>
+                <button class="btncf">confirm</button>
+                <button>Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="handle"
+          ><i class="fas fa-caret-down" onclick="settingMenuToggle()"></i
+        ></span>
+        <!---setting menu---->
+        <div class="settings-menu">
+          <div id="dark-btn">
+            <span></span>
+          </div>
+
+          <div class="setting-menu-inner">
+            <div class="user-profile">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" />
+              <div>
+                <p>Raja Samantaray</p>
+                <a href="#">See your profile</a>
+              </div>
+            </div>
+            <hr />
+            <div class="user-profile">
+              <img
+                src="D:\image/feedback-topic-mobile-tablet-many-light-bulbs-69117421.jpg"
+              />
+              <div>
+                <p>Give feedback</p>
+                <a href="#">Help us to improve the new design</a>
+              </div>
+            </div>
+            <hr />
+            <div class="setting-links">
+              <i class="fas fa-cog" id="setting-icon"></i>
+              <a href="#"
+                >Setting & Privacy<i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+
+            <div class="setting-links">
+              <i class="fas fa-question-circle" id="setting-icon"></i>
+              <a href="#">Help & support<i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <div class="setting-links">
+              <i class="fas fa-moon" id="setting-icon"></i>
+              <a href="#"
+                >Display & Accessbility<i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+
+            <div class="setting-links">
+              <i class="fas fa-sign-out-alt" id="setting-icon"></i>
+              <a href="#">Logout<i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!---------left sidebar------->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a
+            href="file:///D:/projects/face%20book%20clone%20page/main%20page/profile-page/index.html"
+            ><img src="D:\image/IMG_20190805_140312_859.jpg" />
+            <div class="name"><b>RajaSamantaray</b></div>
+          </a>
+          <a href="#"><i class="fas fa-user-friends"></i>Friends</a>
+          <a href="#"><i class="fas fa-users"></i>Groups</a>
+          <a href="#"><i class="fas fa-store"></i>Market Place</a>
+          <a href="#"><i class="fas fa-tv"></i>Watch</a>
+          <a href="#"><i class="fas fa-history"></i>Memories</a>
+          <a href="#"><i class="fas fa-bookmark"></i>Saved</a>
+          <a href="#"><i class="fas fa-flag"></i>Flags</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut">
+          <p>Your Shortcuts</p>
+          <a href="#"
+            ><img
+              src="D:\image/IMG_20190805_140312_859.jpg"
+            />Rajasamanataray-raj</a
+          >
+          <a href="#"><img src="D:\image/download (2).jpg" />Web Developers</a>
+          <a href="#"
+            ><img src="D:\image/IMG_20190612_131214_935.jpg" />Web Design
+            course</a
+          >
+          <a href="#"
+            ><img src="D:\image\Netflix_-_English.jpg" />Full Stack
+            Development</a
+          >
+        </div>
+      </div>
+      <!----main content---->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <i id="red" class="fas fa-plus-circle"></i>
+            <p>Post story</p>
+          </div>
+
+          <div class="story story2">
+            <img
+              src="D:\image/elina-samantray-1052586-05-09-2019-01-35-24.jpg"
+            />
+            <p>Elina Samantaray</p>
+          </div>
+
+          <div class="story story3">
+            <img src="D:\image/raja3.jpg" />
+            <p>Elon musk</p>
+          </div>
+
+          <div class="story story4">
+            <image src="D:\image/IMG_20190612_131214_935.jpg"></image>
+            <p>Justin bieber</p>
+          </div>
+
+          <div class="story story5">
+            <img src="D:\image/unnamed.jpg" />
+            <p>priyanka</p>
+          </div>
+        </div>
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="D:\image/IMG_20190805_140312_859.jpg" />
+            <div>
+              <p>Raja Samantaray</p>
+              <small>Public <i class="fas fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind,Raja?"
+            ></textarea>
+
+            <div class="add-post-link">
+              <a href="#"><i class="fas fa-video" id="video"></i>Live Video</a>
+              <a href="#"
+                ><i class="fas fa-photo-video" id="photo"></i>Photo/Video</a
+              >
+              <a href="#"><i class="far fa-laugh"></i>Feeling/activity</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" />
+              <div>
+                <p>Raja Samantaray</p>
+                <span>june 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Subscribe<span> @easy Tutorail </span>from my webside to watch more
+            video.<a href="#">easy made</a>
+            <a href="#">#youtube chanel</a>
+          </p>
+          <img src="D:\image/Netflix_-_English.jpg" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <hr />
+              <!-----for like button-->
+              <button class="like-btn">
+                <span id="icon"><i class="far fa-thumbs-up"></i></span>
+                <span id="count">343</span>Like
+              </button>
+
+              <div><i class="far fa-comment-alt" id="activity1"></i>34</div>
+
+              <div><i class="fas fa-share" id="activity1"></i>4</div>
+              <br />
+              <hr />
+              <br />
+              <!----for comment box-->
+              <input
+                type="text"
+                id="comment-box"
+                placeholder="Write a comment...."
+              />  
+              <button class="post1" onclick="narze()">
+                Press Enter to Post
+              </button>
+              <hr />
+              <ul id="unordered"></ul>
+            </div>
+            <div class="post-profile-icon">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" /><i
+                class="fas fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <!----another post start----->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" />
+              <div>
+                <p>Raja Samantaray</p>
+                <span>june 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            like and share this video with friends and family<span>
+              @easy Tutorail </span
+            >Facebook page on your post.Ask your douts in the comments video.<a
+              href="#"
+              >easy made</a
+            >
+            <a href="#">#youtube chanel</a>
+          </p>
+          <img src="D:\image/images (2).jpg" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <!---for second like button-->
+              <button class="like-btn1">
+                <span id="icon1"><i class="far fa-thumbs-up"></i></span>
+                <span id="count1">198</span>Like
+              </button>
+              <div><i class="far fa-comment-alt" id="activity1"></i>74</div>
+              <div><i class="fas fa-share" id="activity1"></i>42</div>
+              <br />
+              <hr />
+              <br />
+              <!----for Second comment box-->
+              <input
+                type="text"
+                id="comment-box1"
+                placeholder="Write a comment...."
+              />
+              <button class="post1" onclick="narze1()">
+                Press Enter to Post
+              </button>
+              <hr />
+              <ul id="unordered1"></ul>
+            </div>
+            <div class="post-profile-icon">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" /><i
+                class="fas fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <!----another post end-->
+        <!------3rd post star-->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" />
+              <div>
+                <p>Raja Samantaray</p>
+                <span>june 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            like and share this video with friends and family<span>
+              @easy Tutorail </span
+            >Facebook page on your post.Ask your douts in the comments video.<a
+              href="#"
+              >easy made</a
+            >
+            <a href="#">#youtube chanel</a>
+          </p>
+          <img src="D:\image/4-48.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <!-----for 3rd like button-->
+              <button class="like-btn2">
+                <span id="icon2"><i class="far fa-thumbs-up"></i></span>
+                <span id="count2">330</span>Like
+              </button>
+              <div><i class="far fa-comment-alt" id="activity1"></i>74</div>
+              <div><i class="fas fa-share" id="activity1"></i>42</div>
+              <br />
+              <hr />
+              <br />
+              <!----for 3rd comment box-->
+              <input
+                type="text"
+                id="comment-box2"
+                placeholder="Write a comment...."
+              />
+              <button class="post1" onclick="narze2()">
+                Press Enter to Post
+              </button>
+              <hr />
+              <ul id="unordered2"></ul>
+            </div>
+            <div class="post-profile-icon">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" /><i
+                class="fas fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <!---3rd post end-->
+        <!---4th post start---->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" />
+              <div>
+                <p>Raja Samantaray</p>
+                <span>june 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            like and share this video with friends and family<span>
+              @easy Tutorail </span
+            >Facebook page on your post.Ask your douts in the comments video.<a
+              href="#"
+              >easy made</a
+            >
+            <a href="#">#youtube chanel</a>
+          </p>
+          <img src="D:\image/images (3).jpg" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <!------for fourth like button--->
+              <button class="like-btn3">
+                <span id="icon3"><i class="far fa-thumbs-up"></i></span>
+                <span id="count3">99</span>Like
+              </button>
+              <div><i class="far fa-comment-alt" id="activity1"></i>74</div>
+              <div><i class="fas fa-share" id="activity1"></i>42</div>
+              <br />
+              <hr />
+              <br />
+              <!----for 4th comment box-->
+              <input
+                type="text"
+                id="comment-box3"
+                placeholder="Write a comment...."
+              />
+              <button class="post1" onclick="narze3()">
+                Press Enter to Post
+              </button>
+              <hr />
+              <ul id="unordered3"></ul>
+            </div>
+            <div class="post-profile-icon">
+              <img src="D:\image/IMG_20190805_140312_859.jpg" /><i
+                class="fas fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more-btn">Load More</button>
+        <!---4th post end---->
+      </div>
+      <!---right sidebar----->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fas fa-map-marker-alt"></i> willson tech prk</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>22</h3>
+            <span>june</span>
+          </div>
+          <div class="right-event">
+            <h4>Mobile Marketing</h4>
+            <p><i class="fas fa-map-marker-alt"></i> willson tech prk</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="D:\image/download (3).jpg" class="sidebar-adds" />
+
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="D:\image/elonmusk.jpg" />
+          </div>
+          <p>Elon Musk</p>
+          <span></span>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="D:\image/download (4).jpg" />
+          </div>
+          <p>Justin bieber</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="D:\image/download (5).jpg" />
+          </div>
+          <p>priyanka</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright 2021 - facebook</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
